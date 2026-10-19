@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="maskBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="mShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#064e3b" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Full bleed background for Android maskable icon -->
+  <rect width="512" height="512" fill="url(#maskBgGrad)" />
+
+  <!-- Content scaled and centered within 80% safe zone (380x380 inside 512x512) -->
+  <g transform="translate(64, 64) scale(0.75)" filter="url(#mShadow)">
+    <!-- Calendar Card Base -->
+    <rect x="96" y="112" width="320" height="304" rx="36" fill="#ffffff" />
+    
+    <!-- Calendar Top Bar -->
+    <path d="M96 148 C96 128 112 112 132 112 L380 112 C400 112 416 128 416 148 L416 196 L96 196 Z" fill="#059669" />
+
+    <!-- Calendar Rings -->
+    <rect x="156" y="80" width="24" height="64" rx="12" fill="#d1fae5" />
+    <rect x="332" y="80" width="24" height="64" rx="12" fill="#d1fae5" />
+
+    <!-- Calendar Grid Dots -->
+    <circle cx="168" cy="244" r="14" fill="#e2e8f0" />
+    <circle cx="256" cy="244" r="14" fill="#e2e8f0" />
+    <circle cx="344" cy="244" r="14" fill="#e2e8f0" />
+
+    <circle cx="168" cy="304" r="14" fill="#e2e8f0" />
+    
+    <!-- Active Highlight Day -->
+    <circle cx="256" cy="304" r="24" fill="#10b981" />
+    <path d="M246 304 L253 311 L268 296" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <circle cx="344" cy="304" r="14" fill="#e2e8f0" />
+
+    <circle cx="168" cy="364" r="14" fill="#e2e8f0" />
+    <circle cx="256" cy="364" r="14" fill="#e2e8f0" />
+    <circle cx="344" cy="364" r="14" fill="#e2e8f0" />
+
+    <!-- WhatsApp bubble -->
+    <circle cx="380" cy="380" r="64" fill="#ffffff" />
+    <circle cx="380" cy="380" r="54" fill="#25d366" />
+    <path d="M366 362 C364 366 364 371 367 378 C371 385 377 392 384 395 C391 398 396 398 400 396 C403 394 407 388 408 385 C409 382 408 380 406 379 L398 375 C396 374 394 374 392 376 L389 380 C388 381 386 381 384 380 C380 378 376 374 374 370 C373 368 373 366 374 365 L378 362 C380 360 380 358 379 356 L375 348 C374 346 372 345 369 346 C366 347 360 351 358 354 C356 357 356 362 360 368 Z" fill="#ffffff" />
+  </g>
+</svg>

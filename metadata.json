@@ -1,0 +1,6 @@
+{
+  "name": "Meu Próximo Contato",
+  "description": "Aplicativo para profissionais autônomos acompanharem clientes, contatos de hoje e retornos pendentes pelo WhatsApp com isolamento rigoroso de dados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
